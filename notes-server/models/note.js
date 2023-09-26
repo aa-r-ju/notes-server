@@ -15,6 +15,7 @@ Note.init(
     },
     important: {
       type: DataTypes.BOOLEAN,
+      allowNull: false,
     },
     date: {
       type: DataTypes.DATE,
@@ -27,7 +28,5 @@ Note.init(
     modelName: "note",
   }
 );
-
-Note.sync();
 
 module.exports = Note;
