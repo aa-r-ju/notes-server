@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/api/notes", notesRouter);
 
 const start = async () => {
-  await connectToDatabase();
+  await connectToDatabase();   
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
