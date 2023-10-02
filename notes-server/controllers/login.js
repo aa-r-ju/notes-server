@@ -12,7 +12,7 @@ router.post("/", async (request, response) => {
       username: body.username,
     },
   });
-console.log(JSON.stringify(user),'snake')
+
   const passwordCorrect = body.password === "secret";
 
   if (!(user && passwordCorrect)) {
@@ -21,11 +21,11 @@ console.log(JSON.stringify(user),'snake')
     });
   }
 
-  const userForToken = 
-{
+  const userForToken = {
     username: user.username,
     id: user.id,
   };
+
   const token = jwt.sign(userForToken, SECRET);
 
   response
