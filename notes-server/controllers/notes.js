@@ -11,6 +11,7 @@ const noteFinder = async (req, res, next) => {
 };
 
 const tokenExtractor = (req, res, next) => {
+  console.log(req,"request")
   const authorization = req.get("authorization");
   if (authorization && authorization.toLowerCase().startsWith("bearer ")) {
     try {
@@ -53,8 +54,8 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/", tokenExtractor, async (req, res) => {
-  console.log("logging note post", req.body);
-  console.log("logging extracted token ", req.decodedToken);
+  //console.log("logging note post", req.body);
+  console.log(req,'pg');
   req.body.userId = req.decodedToken.id;
   const note = await Note.create(req.body);
   res.json(note);
