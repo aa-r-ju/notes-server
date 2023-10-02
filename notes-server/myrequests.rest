@@ -1,6 +1,6 @@
 POST http://localhost:3001/api/notes/
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdzIiLCJpZCI6MjIsImlhdCI6MTY5NjI0MDgyNn0.9MXgfCJCWZxhR4vk_-n5Bq28rPeCF0yQRzkdSprAZkI
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdzIiLCJpZCI6MjIsImlhdCI6MTY5NjI0NDUzMH0.hXJu5voCUcF2bKjM0g_q9tKulemvWaloYCr3ZJnByUM
 
 {
     "content": "note 3",
@@ -11,7 +11,7 @@ POST http://localhost:3001/api/users/
 content-type: application/json
 
 {
-    "username": "tejfellow2",
+    "username": "equity",
     "name": "TEJ Fellow 4"
 }
 ###
@@ -32,7 +32,7 @@ content-type: application/json
 ###
 PUT http://localhost:3001/api/users/tejfellow4
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdzIiLCJpZCI6MjIsImlhdCI6MTY5NjI0MDgyNn0.9MXgfCJCWZxhR4vk_-n5Bq28rPeCF0yQRzkdSprAZkI
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdzIiLCJpZCI6MjIsImlhdCI6MTY5NjI0NDUzMH0.hXJu5voCUcF2bKjM0g_q9tKulemvWaloYCr3ZJnByUM
 
 {
     "disabled": false
