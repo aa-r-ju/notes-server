@@ -1,6 +1,7 @@
+###
 POST http://localhost:3001/api/notes/
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdyIsImlkIjoxLCJpYXQiOjE2OTU3MDkzMzF9.NIM4x8AHro1zMaDDOrZ-vNN1VxOL_faWa15naqlVesg
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlamZlbGxvdyIsImlkIjoxLCJpYXQiOjE2OTYyMzk3NTh9.rtt8lLhNrvnjGkBS8oR8qWp95HemnraJPVN_fad7TK4
 
 {
     "content": "note creation using no important",
@@ -26,6 +27,6 @@ POST http://localhost:3001/api/login/
 content-type: application/json
 
 {
-    "username": "pariyar",
+    "username": "tejfellow",
     "password": "secret"
 }
